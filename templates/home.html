@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the Flask App</h1>
+    <p>This is a simple Flask application demonstrating different routes and form handling.</p>
+    <p>You can:</p>
+    <ul>
+        <li>Visit a sample profile page: <a href="{{ url_for('profile', username='Jai') }}">Jai's Profile</a></li>
+        <li>Go to the <a href="{{ url_for('submit') }}">Submit Form</a> to enter your information</li>
+    </ul>
+{% endblock %} 
